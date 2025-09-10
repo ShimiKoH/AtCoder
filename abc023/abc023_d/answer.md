@@ -15,21 +15,25 @@
 ある的 $Target_i$ について、初期高度 $H_i$ 、上昇度 $S_i$ が与えられている。
 <br>
 この的を撃つ時刻を $t$ としたとき、そのペナルティ $p_i(t)$ は、 
-$$ p_i(t) = H_i + S_i \times t $$
+```math 
+p_i(t) = H_i + S_i \times t 
+```
 で表される。 $p_i(t)$ が条件「 $p_i(t)$ は $P$ 以下である 」 を満たすためには、
 <br>
-$$
+```math
 \begin{align*}
 p_i(t) & \le P \\
 H_i + S_i \times t & \le P \\
 S_i \times t & \le P - H_i \\
 t & \le \frac{P - H_i}{S_i} \\
 \end{align*}
-$$
+```
 であることが必要十分条件である。これはいかなる $i$ でも成立する。
 <br>
 ガウス記号 $[ a ]$ を、「 $a$ を超えない最大の整数 」と定義し、
-$$ t_i = \frac{P - H_i}{S_i}$$
+```math
+t_i = \frac{P - H_i}{S_i}
+```
 とおく。
 すべての $Target_i$ は $t_i{\sec}$以内に撃つ必要がある。
 <br>
@@ -50,49 +54,49 @@ $$ t_i = \frac{P - H_i}{S_i}$$
 二分探索では昇順または降順に並んだ、ある区間内に求めたい解があることがわかっているとき、探索範囲を半分に絞ったとき、その中にあるのか、もう一つの方にあるのか判定し、それを繰り返すことによって範囲を狭めていき解を得る方法である。
 <br>
 例えば、以下の昇順の数列において、最初に $10$ を超える数を求めることを考える。
-$$
+```math
 \begin{array}{c|}
 index & 0 & 1 & 2 & 3 & 4 & 5 &  6 &  7 &  8 &  9 & 10 &  11\\
 \hline
 value & 1 & 1 & 2 & 3 & 5 & 8 & 13 & 21 & 34 & 55 & 89 & 144
 \end{array}
-$$
+```
 ここではインデックス値について範囲を狭めていく。
 <br>
 まず、両端の平均値である $5.5$ を切り捨てたインデックス $5$ を判定する。
 <br>
 $8 < 10$ であり、 $8$ は絶対に解にはならないため、解はインデックス $6$ 以降に存在するといえる。
-$$
+```math
 \begin{array}{c|}
 index & \sout{0} & \sout{1} & \sout{2} & \sout{3} & \sout{4} & \sout{5} &  6 &  7 &  8 &  9 & 10 &  11\\
 \hline
 value & \sout{1} & \sout{1} & \sout{2} & \sout{3} & \sout{5} & \sout{8} & 13 & 21 & 34 & 55 & 89 & 144
 \end{array}
-$$
+```
 同様に両端の平均値 $8.5$ の切り捨てインデックス $8$ を判定する。
 $34 > 10$ ではあるが、もし $11,12,\cdots,33$ が存在しないのであれば、解になりうるので、今回はインデックス $8$ を含め、 $8$ 以前に存在するといえる。
-$$
+```math
 \begin{array}{c|}
 index & \sout{0} & \sout{1} & \sout{2} & \sout{3} & \sout{4} & \sout{5} &  6 &  7 &  8 &  \sout{9} & \sout{10} &  \sout{11}\\
 \hline
 value & \sout{1} & \sout{1} & \sout{2} & \sout{3} & \sout{5} & \sout{8} & 13 & 21 & 34 & \sout{55} & \sout{89} & \sout{144}
 \end{array}
-$$
+```
 残る配列幅は $3$ である。インデックス平均値は $7$ であり、その値 $21$ は $ 21 > 10 $ を満たすので、解はインデックス $7$ 以下にある。
-$$
+```math
 \begin{array}{c|}
 index & \sout{0} & \sout{1} & \sout{2} & \sout{3} & \sout{4} & \sout{5} &  6 &  7 &  \sout{8} &  \sout{9} & \sout{10} &  \sout{11}\\
 \hline
 value & \sout{1} & \sout{1} & \sout{2} & \sout{3} & \sout{5} & \sout{8} & 13 & 21 & \sout{34} & \sout{55} & \sout{89} & \sout{144}
 \end{array}
-$$
+```
 配列幅 $2$ になった。同様にするとインデックス $7$ が消える。
-$$
+```math
 \begin{array}{c|}
 index & \sout{0} & \sout{1} & \sout{2} & \sout{3} & \sout{4} & \sout{5} &  6 &  \sout{7} &  \sout{8} &  \sout{9} & \sout{10} &  \sout{11}\\
 \hline
 value & \sout{1} & \sout{1} & \sout{2} & \sout{3} & \sout{5} & \sout{8} & 13 & \sout{21} & \sout{34} & \sout{55} & \sout{89} & \sout{144}
 \end{array}
-$$
+```
 
 # 実装
