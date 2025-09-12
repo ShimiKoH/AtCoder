@@ -174,5 +174,5 @@ cond(no)->io2(right)->io1
 ```
 
 ## コード
-### [C++](.\abc023_d.cpp)
-### [Python](.\abc023_d.py)
+### [C++](abc023_d.cpp)
+### [Python](abc023_d.py)
