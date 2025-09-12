@@ -172,3 +172,7 @@ st->io1->cond
 cond(yes)->sub1->op1->e
 cond(no)->io2(right)->io1
 ```
+
+## コード
+### [C++](abc023_d.cpp)
+### [Python](abc023_d.py)
