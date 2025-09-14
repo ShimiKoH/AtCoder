@@ -59,4 +59,4 @@ $\Rightarrow \mathrm{false}$ を返し、より小さい範囲を探す。
 ##### 総計算量 $\mathcal{O}(N^2 + (N-K)^2)$
 
 ## コード
-#### [C++](abc203_d.cpp)
+### [C++](abc203_d.cpp)
