@@ -1,6 +1,6 @@
 ## [AtCoder Beginner Contest 190_C Bowls and Dishes](https://atcoder.jp/contests/abc190/tasks/abc190_c)
 
-<!-- <details> -->
+<details>
 <summary><b>問題を確認</b></summary>
 
 ## 問題
@@ -34,7 +34,7 @@ C_K & D_K & \\
 ## 出力
 答えを出力せよ。
 
-<!-- </details> -->
+</details>
 
 ## 解き方
 この問題では、$K$ の最大値が $16$ と大きくないので、$\mathrm{bit}$ 全探索が可能である。
