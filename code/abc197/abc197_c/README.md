@@ -1,6 +1,6 @@
 ## [AtCoder Begginer Contest 197_C ORXOR](https://atcoder.jp/contests/abc197/tasks/abc197_c)
 
-<!-- <details> -->
+<details>
 <summary><b>問題を確認</b></summary>
 
 ## 問題
@@ -44,7 +44,7 @@ A_1 & A_2 & A_3 & \cdots & A_N &\\
 
 ## 出力
 答えを出力せよ。
-<!-- </details> -->
+</details>
 
 ## 解き方
 入力される数列の長さは最大で $N = 20$ であり、そこまで多くはない。
