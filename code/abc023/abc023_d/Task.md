@@ -153,25 +153,6 @@ value & \sout{1} & \sout{1} & \sout{2} & \sout{3} & \sout{5} & \sout{8} & 13 & \
 このように平均値(切り捨て)をそのまま区間の端に設定できるのが強み。最終的に幅 $2$ に見えるが、左開区間は $5$ を含まない範囲なので、実質 $6$ のみである。開区間は解になり得ない端なので、初期設定で配列の外側を設定する必要があるが、代入は直観的になる。
 
 
-## 実装
-
-
-```flow
-st=>start: 処理開始
-e=>end: 処理終了
-io1=>inputoutput: データ入力
-cond=>condition: 入力値が空
-でない？
-io2=>inputoutput: エラー出力
-（※1）:>#footnote
-sub1=>subroutine: 入力値の検証
-（※2）:>http://www.google.com[blank]
-op1=>operation: セッション開始
-
-st->io1->cond
-cond(yes)->sub1->op1->e
-cond(no)->io2(right)->io1
-```
 
 ## コード
 ### [C++](abc023_d.cpp)
