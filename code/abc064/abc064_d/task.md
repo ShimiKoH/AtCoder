@@ -1,7 +1,7 @@
 ## [AtCoder Beginner Contest 064_D Insertion](https://atcoder.jp/contests/abc064/tasks/abc064_d)
 
 <details>
-<summary><b>問題を確認</b><summary>
+<summary><b>問題を確認</b></summary>
 
 ## 問題
 `(`と`)`で構成される $N$ 文字の文字列 $S$ が与えらえる。 $S$ にいくつかの `(`または`)`を挿入することで正しい括弧列を作りたい。
