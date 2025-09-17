@@ -64,3 +64,6 @@ binary & 1 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & (1) & \\
 \Downarrow \\
 (A_1) \mathrm{XOR} (A_2 \mathrm{OR} A_3 \mathrm{OR} A_4 \mathrm{XOR} A_5) \mathrm{XOR} (A_6) \mathrm{XOR} (A_7 \mathrm{OR} A_8 \mathrm{OR} A_9)
 ```
+
+## コード
+### [C++](abc197_c.cpp)

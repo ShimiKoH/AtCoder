@@ -40,3 +40,7 @@ $N$ はそこまで大きくないため、$\text{bit}$ 全探索によって求
     $\mathcal{O}(2^N \times (N \times M))$
     最大で $2^{12} \times 12 \times 12 \simeq 6.0 \times 10^6 $ 
     これは十分高速である
+
+
+## コード
+### [C++](abc167_c.cpp)
