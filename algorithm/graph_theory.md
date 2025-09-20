@@ -49,14 +49,14 @@ $k$ 個の頂点から任意の $1$ 点を選び、辺を追加する。その�
 グラフは木であるため、任意の $2$ 頂点間には道がただ1つ存在することを踏まえ、以下の定数を新たに定義する。
 - $R_{mid}: R(b,c), R(x,y)$ をつなぐ唯一の道
 これが唯一しかないことは、閉路を持たないことによって証明される。
-また、$R(b, c), R(x, y)$ が交差する場合は、 $R_{mid}$ は長さを持たない道とする。
+また、 $R(b, c), R(x, y)$ が交差する場合は、 $R_{mid}$ は長さを持たない道とする。
 - $d_{mid}: R_{mid}$ の長さ
 - $v_P: R(a,b)$ 上にあり、 $R_{mid}$ の端点である頂点
 - $v_Q: R(x,y)$ 上にあり、 $R_{mid}$ の端点である頂点
 
 つまり、 $R_{mid} = R(P, Q)$ 、 $d_{mid} = d(P,Q)$ である。
 
-![graphic_theory_question2_1.jpg](https://github.com/ShimiKoH/AtCoder/blob/ba4efd940c76f3926c0dacb2519b0d2791ac3ff0/images/graphc_theory_question2_1.jpg)
+<img src="https://github.com/ShimiKoH/AtCoder/blob/ba4efd940c76f3926c0dacb2519b0d2791ac3ff0/images/graphc_theory_question2_1.jpg" width="50%">
 
 なお、 $v_a$ はいずれかの道の上またはそこからの分岐の先にある。
 ただし、 $v_b, v_c, v_x, v_y$ の $4$ 端点のさらに先にはなにも存在しない。
