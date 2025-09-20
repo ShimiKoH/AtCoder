@@ -1,32 +1,17 @@
 ## [AtCoder Begginer Contest 197_C ORXOR](https://atcoder.jp/contests/abc197/tasks/abc197_c)
 
-<details>
-<summary><b>問題を確認</b></summary>
-
 ## 問題
 長さ $N$ の数列 $A$ が与えられる。
 この数列を、$1$ つ以上の空でない連続した区分に分ける。
 その後、分けた各区間で、区間内の数のビット単位 $\mathrm{OR}$ を計算する。
 こうして得られたすべての値のビット単位 $\mathrm{XOR}$ として考えらえる最小値を求めなさい。
 
-<details>
-<summary>
-
-ビット単位 $\mathrm{OR}$ 演算とは
-</summary>
-
-整数 $A,B$ のビット単位 $\mathrm{OR}$ 、$A \ \mathrm{OR} \ B$ は以下のように定義される。
+#### ビット単位 $\mathrm{OR}$ 演算とは
+整数 $A,B$ のビット単位 $\mathrm{OR}$ 、 $A \ \mathrm{OR} \ B$ は以下のように定義される。
 - $A \ \mathrm{OR} \ B$ を二進表記した際の $2^k(k \geqq 0)$ の位の数は、 $A,B$ を二進表記した際の $2^k$ の位の数のうち少なくとも片方が $1$ であれば $1$、そうでなければ $0$ である。
-</details>
-
-<details>
-<summary>
-
-ビット単位 $\mathrm{XOR}$ 演算とは</summary>
-
-整数 $A,B$ のビット単位 $\mathrm{XOR}$ 、$A \ \mathrm{XOR} \ B$ は以下のように定義される。
+#### ビット単位 $\mathrm{XOR}$ 演算とは
+整数 $A,B$ のビット単位 $\mathrm{XOR}$ 、 $A \ \mathrm{XOR} \ B$ は以下のように定義される。
 - $A \ \mathrm{XOR} \ B$ を二進表記した際の $2^k(k \geqq 0)$ の位の数は、 $A,B$ を二進表記した際の $2^k$ の位の数のうち一方のみが $1$ であれば $1$、そうでなければ $0$ である。
-</details>
 
 ## 制約
 - $1 \leqq N \leqq 20$
@@ -44,7 +29,8 @@ A_1 & A_2 & A_3 & \cdots & A_N &\\
 
 ## 出力
 答えを出力せよ。
-</details>
+
+***
 
 ## 解き方
 入力される数列の長さは最大で $N = 20$ であり、そこまで多くはない。
