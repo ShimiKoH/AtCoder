@@ -24,8 +24,8 @@ $$
 a_1 \bigstar k \equiv a_2 \bigstar k
 $$
 
-演算記号 $\bigstar$ は $+, -, \times, \div, \text{\textasciicircum}$ である(その他の演算についてはここでは考えない)。ただし
-- $\div$ の場合は、$\dfrac{a_1}{k}$ および $\dfrac{a_2}{k}$ がともに整数
+演算記号 $\bigstar$ は $+, -, \times, \div,$ ^である(その他の演算についてはここでは考えない)。ただし
+- $\div$ の場合は、 $\dfrac{a_1}{k}$ および $\dfrac{a_2}{k}$ がともに整数
 
 $$
 \begin{align*}
@@ -36,7 +36,7 @@ $$
 \alpha \equiv 0 \ \lor \ j -j^{\prime} \equiv 0 \\
 $$
 
-- $\text{\textasciicircum}$ の場合は、 $k$ は $k \geqq 0$  
+- ^ の場合は、 $k$ は $k \geqq 0$  
 
 であるときのみ、上述の式はすべての $k$ で成り立つ。
 
@@ -48,7 +48,7 @@ $$
 $$
 
 を常に満たすような関数 $f(n)$ について考える。
-ただし $\dfrac{A}{n}$ は整数、$A$ と $p$ および $n$ と $p$ はそれぞれ互いに素(共通の素因数を持たない)、 $p$ は $p \gt n$ を満たす素数であるとする。
+ただし $\dfrac{A}{n}$ は整数、 $A$ と $p$ および $n$ と $p$ はそれぞれ互いに素(共通の素因数を持たない)、 $p$ は $p \gt n$ を満たす素数であるとする。
 
 $$
 \begin{align*}
