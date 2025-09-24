@@ -6,7 +6,7 @@
 軽く合同式について振り返る。ある数 $a$ を $p$ で割ったときの商を $q$ 、剰余を $r$ としたとき、以下の式が成り立つ。
 
 $$
-a = p \times q + r
+a = p \cdot q + r
 $$
 
 合同式はこの $r$ に焦点を当てた式で、以下のようにあらわす。
@@ -24,14 +24,14 @@ $$
 a_1 \bigstar k \equiv a_2 \bigstar k
 $$
 
-演算記号 $\bigstar$ は $+, -, \times, \div,$ ^である(その他の演算についてはここでは考えない)。ただし
+演算記号 $\bigstar$ は $+, -, \cdot, \div,$ ^ である(その他の演算についてはここでは考えない)。ただし
 - $\div$ の場合は、 $\dfrac{a_1}{k}$ および $\dfrac{a_2}{k}$ がともに整数
 
 $$
 \begin{align*}
-\alpha \times (i \times p + j) & \equiv \alpha \times (i^{\prime} \times p + j^{\prime}) \\
-\alpha \times j & \equiv \alpha \times j^{\prime} \\
-\alpha \times (j - j^{\prime}) & \equiv 0 \\
+\alpha \cdot (i \cdot p + j) & \equiv \alpha \cdot (i^{\prime} \cdot p + j^{\prime}) \\
+\alpha j & \equiv \alpha j^{\prime} \\
+\alpha (j - j^{\prime}) & \equiv 0 \\
 \end{align*} \\
 \alpha \equiv 0 \ \lor \ j -j^{\prime} \equiv 0 \\
 $$
@@ -44,7 +44,7 @@ $$
 つまり、ある数 $A$ に対して、
 
 $$
-\frac{A}{n} \equiv A \times f(n) \quad (\bmod \ p) \\
+\frac{A}{n} \equiv A \cdot f(n) \quad (\bmod \ p) \\
 $$
 
 を常に満たすような関数 $f(n)$ について考える。
@@ -52,24 +52,24 @@ $$
 
 $$
 \begin{align*}
-\frac{A}{n} & \equiv A \times f(n) \quad \\
-\frac{A}{n} \times n & \equiv A \times f(n) \times n \\
-A & \equiv A \times f(n) \times n \\
-1 & \equiv f(n) \times n \\
-\therefore f(n) \times n & \equiv 1 \quad (\bmod \ p)\\
+\frac{A}{n} & \equiv A \cdot f(n) \quad \\
+\frac{A}{n} \cdot n & \equiv A \cdot f(n) \cdot n \\
+A & \equiv A \cdot f(n) \cdot n \\
+1 & \equiv f(n) \cdot n \\
+\therefore f(n) \cdot n & \equiv 1 \quad (\bmod \ p)\\
 \end{align*}
 $$
 
-また、 $p = q \times n + r \quad (0 \lt r \lt n)$ とすると、
+また、 $p = q \cdot n + r \quad (0 \lt r \lt n)$ とすると、
 
 $$
 \begin{align*}
 p & \equiv 0 \quad (\bmod \ p) \\
-q \times n + r & \equiv 0 \\
-f(n) \times (q \times n + r) & \equiv 0 \\
-q \times (f(n) \times n) + r \times f(n) & \equiv 0 \\
-q + r \times f(n) & \equiv 0 \quad (\because f(n) \times n \equiv 1) \\
-r \times f(n) & \equiv -q \\
+q \cdot n + r & \equiv 0 \\
+f(n) \cdot (q n + r) & \equiv 0 \\
+q(f(n) \cdot n) + r \cdot f(n) & \equiv 0 \\
+q + r \cdot f(n) & \equiv 0 \quad (\because f(n) \cdot n \equiv 1) \\
+r \cdot f(n) & \equiv -q \\
 \end{align*}
 $$
 
@@ -77,12 +77,12 @@ $$
 
 $$
 \begin{align*}
-r \times f(n) & \equiv -q \\
-f(n) & \equiv -q \times f(r) \\
+r \cdot f(n) & \equiv -q \\
+f(n) & \equiv -q \cdot f(r) \\
 \end{align*}
 $$
 
-$f(n)$ は $-q \times f(r)$ を $p$ で割った剰余に等しいことが分かった。  
+$f(n)$ は $-q \cdot f(r)$ を $p$ で割った剰余に等しいことが分かった。  
 つまり、
 1. $f(1)$ が求められる。
 2. $1 \leqq i \lt k$ であるすべての $i$ について、 $f(i)$ が求められているならば、 $f(k)$ を求められる。
